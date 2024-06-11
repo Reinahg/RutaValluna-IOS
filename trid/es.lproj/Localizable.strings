@@ -1,0 +1,193 @@
+/* 
+  Localizable.strings
+  trid
+
+  Created by Black on 11/29/16.
+  Copyright © 2016 Black. All rights reserved.
+*/
+
+"App Name" = "Ruta Valluna";
+"App Full Name" = "Mi tierra bonita, nuestro Valle del Cauca";
+"App Slogan 1" = "";
+"App Slogan 2" = "";
+"App Slogan 3" = "";
+
+// ----------------------- Screen Login --------------------------
+"Connect with Facebook" = "Conecta con Facebook";
+"Connect with Google" = "Conecta con Google";
+"Connect with Email" = "Conecta con Email";
+"Skip" = "Ingresar";
+"Cancel" = "Cancelar";
+"Or use your email" = "O usa tu correo";
+
+
+"By signing up, you agree to the Terms of Service and Privacy Policy" = "Al registrarse, acepta los Términos de servicio y la Política de privacidad";
+"Terms of Service" = "Términos de servicio";
+"Privacy Policy" = "Política de privacidad";
+
+"Please provide your email address" = "Please provide your email address";
+
+// email
+"Sign In" = "Iniciar";
+"Sign Up" = "Registro";
+// login
+"Welcome" = "Bienvenido";
+"Email" = "Email";
+"Password" = "Contraseña";
+"Forgot Password" = "Contraseña Olvidada";
+// sign up
+"Create an account" = "Registro";
+"Username" = "Usuario";
+"Confirm Password" = "Confirma Contraseña";
+"Password Empty" = "Contraseña Vacía";
+"Password dont match" = "Contraseñas no coinciden";
+"Name empty" = "Nombre vacío";
+// forgot password
+"Forgot password description" = "Olvidado descripción de contraseña";
+"Email empty" = "Email vacío";
+"Email invalid" = "Email vacío";
+
+// ----------------------- Popup --------------------------
+"Click out side to close" = "Click afuera para cerrar";
+
+// ----------------------- Menu --------------------------
+"Book ticket" = "Transporte";
+"My Plan" = "Mi Plan";
+"My Post" = "Mi Post";
+"Favorite" = "Favoritos";
+"Profile" = "Perfil";
+"Information" = "Información"; // section 2
+"About This App" = "Sobre esta App";
+"Privacy Statement" = "Política de Privacidad";
+"Feedback" = "Escríbenos";
+"Review App" = "Califica la App";
+"Setting" = "Ajustes";
+"Log Out" = "Salir";
+"Version" = "Version";
+"Visa Online" = "El Salvador";
+
+// ----------------------- Explore/Discover --------------------------
+"Home" = "Inicio";
+// Tabbar
+"All Cities" = "Todos los Municipios";
+"Explore" = "Explorar";
+"Saved" = "Guardado";
+"No data" = "Sin Datos";
+
+// ----------------------- Place Detail --------------------------
+"comment" = "comentario";
+"comments" = "comentarios";
+"Write a comment" = "Escribe un Comentario";
+"Write comment" = "Comentar";
+"Your comment is empty" = "Comentario Vacío";
+"unknown" = "desconocido";
+"From" = "De";
+"to" = "para";
+"To" = "Para";
+"Free" = "Gratis";
+"+" = "+";
+"Review" = "Opinión";
+"Reviews" = "Opiniones";
+"view all" = "ver todo";
+"Check in" = "Check in";
+"Check out" = "Check out ";
+"Read more" = "Ver Más";
+"Address" = "Dirección";
+"Direction" = "Dirección";
+"Phone" = "Teléfono";
+"Call" = "Llamar";
+"Mail" = "Email";
+"Send" = "Enviar";
+"Web" = "Web";
+"WhatsApp" = "WhatsApp";
+"Open" = "Abrir";
+"Visit" = "Visitar";
+"Facebook" = "Facebook";
+"View" = "Ver";
+"Opening Day" = "Días Abierto";
+"Opening Time" = "Horario Apertura";
+"Description" = "Descripción";
+
+// TOUR
+"Location" = "Ubicación";
+"Duration" = "Duración";
+"Language" = "Idioma";
+"Languages" = "Idiomas";
+"Transpotation" = "Transporte";
+"GroupSize" = "Grupo";
+
+// ----------------------- Datetime --------------------------
+"Today" = "Hoy";
+"Yesterday" = "Ayer";
+"day ago" = "días atrás";
+"h ago" = "horas";
+"m ago" = "meses";
+"Just a moment" = "Hace un momento";
+
+// ----------------------- Filter --------------------------
+"Filter" = "Filtro";
+
+// ----------------------- Mail --------------------------
+"Sent" = "Enviar";
+"Send" = "Enviar";
+"Dismiss" = "Deshechar";
+"Please enter something in your mind" = "Escribe lgo";
+
+// ----------------------- Tip --------------------------
+"Tip" = "Consejo";
+"Tips" = "Consejos";
+"New tip" = "Nuevo Consejo";
+"Add a new tip" = "Añadir Consejo";
+"Add Tip Placeholder" = "Marcar Consejo";
+"Add" = "Añadir";
+"Content is empty" = "Sin Cintenido";
+"Top Tips" = "Mejores Consejos";
+"Recent Tips" = "Consejos Recientes";
+"Local Tours" = "Tours Locales";
+"Success" = "Éxito";
+"Tip for" = "Consejo de";
+"Ask a question or share your tips" = "Pregunta o comparte consejos";
+"Type here..." = "Escribe aquí...";
+"Questions" = "Preguntas";
+
+
+// ----------------------- Error --------------------------
+"Something wrong happened" = "Algo no funcionó";
+"This user was disabled" = "Usuario deshabilitado";
+"Coming Soon" = "Próximamente";
+
+// ----------------------- Home --------------------------
+"There's any tip in this city" = "No hay consejos en esta ciudad";
+"There's any tour in this city" = "No hay tours en esta ciudad";
+"Get to know" = "Conoce";
+"Emergency" = "Emergencia";
+"Getting Around" = "Como Moverte";
+"Back to list" = "Volver Arriba";
+
+// ----------------------- Favorited --------------------------
+"Removed" = "Borrado";
+
+
+// ----------------------- Sleep & Tour booking --------------------------
+"Book Now" = "Reserva Ahora";
+"Check Availability" = "Revisa Disponibilidad";
+
+// ----------------------- Online status --------------------------
+"It is look like you are offline" = "Parece que no tienes Internet";
+"Please check your internet connection" = "Revisa tu conexión";
+"Available Offline" = "Disponible sin Conexión";
+"Online Only" = "Solo en Línea";
+
+// Inapp purchase
+ "Unlock" = "Desbloquear";
+
+// Rate app
+"Rate our App" = "Clifica esta App";
+"Rate our app description" = "Descripción de Calificación";
+"Rate" = "Califica";
+"Send Feedback" = "Enviar Opinión";
+"Close" = "Cerrar";
+
+// ----------------------- Ask & share --------------------------
+"Ask & Share" = "Pregunta y Comparte";
+"Ask" = "Pregunta";
