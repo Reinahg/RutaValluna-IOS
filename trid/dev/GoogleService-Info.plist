@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>592680078979-2libb4mvb7bug96csc3ppfecpnk79b9q.apps.googleusercontent.com</string>
+	<string>1004948433134-bld412b1q24jmvvk5b2rdetnhjodjnlp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.592680078979-2libb4mvb7bug96csc3ppfecpnk79b9q</string>
+	<string>com.googleusercontent.apps.1004948433134-bld412b1q24jmvvk5b2rdetnhjodjnlp</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBKqbuXAVoYDmYc2eY3V-w0ysGy-bS1kC8</string>
+	<string>AIzaSyBNoerPZ-RWlqgxMtjfGrpffkSzQfCVvL0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>592680078979</string>
+	<string>1004948433134</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.rutavalluna.ios</string>
+	<string>com.rutacafetera.ios</string>
 	<key>PROJECT_ID</key>
-	<string>rutavalluna-5d92d</string>
+	<string>ruta-cafetera</string>
 	<key>STORAGE_BUCKET</key>
-	<string>rutavalluna-5d92d.appspot.com</string>
+	<string>ruta-cafetera.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:592680078979:ios:daaaa546dcda35d90b15b6</string>
+	<string>1:1004948433134:ios:7cb1735f670c0d726aebff</string>
 	<key>DATABASE_URL</key>
-	<string>https://rutavalluna-5d92d.firebaseio.com</string>
+	<string>https://ruta-cafetera-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

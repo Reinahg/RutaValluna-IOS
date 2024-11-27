@@ -10,9 +10,6 @@ import UIKit
 import FirebaseAuth
 import FirebaseMessaging
 import FirebaseCore
-import FBSDKCoreKit
-import FBSDKLoginKit
-import FBSDKShareKit
 
 class SignInInfo: NSObject, NSCoding {    
     // property

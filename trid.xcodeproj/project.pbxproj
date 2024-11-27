@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		214ED16931F3A57E8E54CD18 /* Pods_trid_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA7428C007306A02219E058 /* Pods_trid_dev.framework */; };
+		39AC383BE879A1F186BA8AE6 /* Pods_trid_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D89DE9B784B213BA16F4322 /* Pods_trid_dev.framework */; };
+		3A46122A2CE5165F004B182C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A4612292CE5165F004B182C /* GoogleService-Info.plist */; };
 		3AE63ECF2C091804009A64DC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE63ECE2C091804009A64DC /* FirebaseAuth */; };
 		3AE63ED12C091804009A64DC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE63ED02C091804009A64DC /* FirebaseDatabase */; };
 		3AE63ED32C091804009A64DC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE63ED22C091804009A64DC /* FirebaseFirestore */; };
@@ -252,14 +253,13 @@
 		C1FF081A1EA5D6B4006305F9 /* FWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FF08191EA5D6B4006305F9 /* FWeather.swift */; };
 		C1FF081E1EA6055F006305F9 /* Le2Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FF081D1EA6055F006305F9 /* Le2Location.swift */; };
 		C1FF08221EA60585006305F9 /* Le2Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FF08211EA60585006305F9 /* Le2Network.swift */; };
-		EE0D76BD24308DFB006B2AB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE0D76BC24308DFB006B2AB9 /* GoogleService-Info.plist */; };
 		EE0D76BF24308EAD006B2AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D76BE24308EAD006B2AB9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		170D70A7B2296412A1565B37 /* Pods-trid-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trid-dev.release.xcconfig"; path = "Target Support Files/Pods-trid-dev/Pods-trid-dev.release.xcconfig"; sourceTree = "<group>"; };
-		50E3622DECCD5A48768AAA00 /* Pods-trid-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trid-dev.debug.xcconfig"; path = "Target Support Files/Pods-trid-dev/Pods-trid-dev.debug.xcconfig"; sourceTree = "<group>"; };
-		7AA7428C007306A02219E058 /* Pods_trid_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trid_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4612292CE5165F004B182C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68137140367AC5C350DBF1B8 /* Pods-trid-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trid-dev.debug.xcconfig"; path = "Target Support Files/Pods-trid-dev/Pods-trid-dev.debug.xcconfig"; sourceTree = "<group>"; };
+		6D89DE9B784B213BA16F4322 /* Pods_trid_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trid_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10000F41E9B614300C9DFAA /* ic_cross_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@2x.png"; sourceTree = "<group>"; };
 		C10000F51E9B614300C9DFAA /* ic_cross_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@3x.png"; sourceTree = "<group>"; };
 		C10000F81E9B614300C9DFAA /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
@@ -539,7 +539,7 @@
 		C1FF08191EA5D6B4006305F9 /* FWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWeather.swift; sourceTree = "<group>"; };
 		C1FF081D1EA6055F006305F9 /* Le2Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Le2Location.swift; sourceTree = "<group>"; };
 		C1FF08211EA60585006305F9 /* Le2Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Le2Network.swift; sourceTree = "<group>"; };
-		EE0D76BC24308DFB006B2AB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D6636ED881CC772ED348942E /* Pods-trid-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trid-dev.release.xcconfig"; path = "Target Support Files/Pods-trid-dev/Pods-trid-dev.release.xcconfig"; sourceTree = "<group>"; };
 		EE0D76BE24308EAD006B2AB9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE0D76C0243092C7006B2AB9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -557,7 +557,7 @@
 				3AE63ED32C091804009A64DC /* FirebaseFirestore in Frameworks */,
 				3AE63ED92C091804009A64DC /* FirebaseStorage in Frameworks */,
 				3AE63ED52C091804009A64DC /* FirebaseInAppMessaging-Beta in Frameworks */,
-				214ED16931F3A57E8E54CD18 /* Pods_trid_dev.framework in Frameworks */,
+				39AC383BE879A1F186BA8AE6 /* Pods_trid_dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,8 +567,8 @@
 		22CA196000D2EF87EC9D6D38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				50E3622DECCD5A48768AAA00 /* Pods-trid-dev.debug.xcconfig */,
-				170D70A7B2296412A1565B37 /* Pods-trid-dev.release.xcconfig */,
+				68137140367AC5C350DBF1B8 /* Pods-trid-dev.debug.xcconfig */,
+				D6636ED881CC772ED348942E /* Pods-trid-dev.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -577,7 +577,7 @@
 			isa = PBXGroup;
 			children = (
 				C10A1B8B1ECB2476002148D0 /* StoreKit.framework */,
-				7AA7428C007306A02219E058 /* Pods_trid_dev.framework */,
+				6D89DE9B784B213BA16F4322 /* Pods_trid_dev.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -634,7 +634,7 @@
 		C102E0611DE8452C00710A6C /* dev */ = {
 			isa = PBXGroup;
 			children = (
-				EE0D76BC24308DFB006B2AB9 /* GoogleService-Info.plist */,
+				3A4612292CE5165F004B182C /* GoogleService-Info.plist */,
 			);
 			path = dev;
 			sourceTree = "<group>";
@@ -1724,12 +1724,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C118075C1D98D265001E5BC6 /* Build configuration list for PBXNativeTarget "trid-dev" */;
 			buildPhases = (
-				20D1DB212490BE340CD57E3B /* [CP] Check Pods Manifest.lock */,
+				8EB74EE32463BFB5BEC4EAD6 /* [CP] Check Pods Manifest.lock */,
 				C11807461D98D265001E5BC6 /* Sources */,
 				C11807471D98D265001E5BC6 /* Frameworks */,
 				C11807481D98D265001E5BC6 /* Resources */,
-				862795FD929E72E9C6FC615D /* [CP] Embed Pods Frameworks */,
-				08E97E3406401DCD610A238B /* [CP] Copy Pods Resources */,
+				265DF5D7B2DDEE22743383D9 /* [CP] Embed Pods Frameworks */,
+				EA9A62A607DECC06BB6FA831 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1846,8 +1846,8 @@
 				C1A24F001E523263005BCF8A /* BadgeWithCounterViewBigSized.xib in Resources */,
 				C1E083371E4F2511009653F3 /* MailComposeViewController.xib in Resources */,
 				C179D2531D9FA45A009A0DF9 /* SearchPlaceViewController.xib in Resources */,
+				3A46122A2CE5165F004B182C /* GoogleService-Info.plist in Resources */,
 				C1F86D631DB4881B007201DE /* PlaceMarkerSelectedView.xib in Resources */,
-				EE0D76BD24308DFB006B2AB9 /* GoogleService-Info.plist in Resources */,
 				C1E99BF41DA5155E0042D39A /* PaidFacilityCell.xib in Resources */,
 				C10001011E9B614300C9DFAA /* ic_cross_white@2x.png in Resources */,
 				C1B633711E5AE9690094FEB1 /* HomeTourCollectionCell.xib in Resources */,
@@ -1877,24 +1877,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08E97E3406401DCD610A238B /* [CP] Copy Pods Resources */ = {
+		265DF5D7B2DDEE22743383D9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		20D1DB212490BE340CD57E3B /* [CP] Check Pods Manifest.lock */ = {
+		8EB74EE32463BFB5BEC4EAD6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1916,21 +1916,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		862795FD929E72E9C6FC615D /* [CP] Embed Pods Frameworks */ = {
+		EA9A62A607DECC06BB6FA831 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trid-dev/Pods-trid-dev-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2248,7 +2248,7 @@
 		};
 		C118075D1D98D265001E5BC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50E3622DECCD5A48768AAA00 /* Pods-trid-dev.debug.xcconfig */;
+			baseConfigurationReference = 68137140367AC5C350DBF1B8 /* Pods-trid-dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = trid/trid.entitlements;
@@ -2258,13 +2258,14 @@
 				DEVELOPMENT_TEAM = 22QYLALDQG;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "trid/trid-dev.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ruta cafetera";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rutavalluna.ios;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rutacafetera.ios;
 				PRODUCT_NAME = "Surf City";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -2280,7 +2281,7 @@
 		};
 		C118075E1D98D265001E5BC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 170D70A7B2296412A1565B37 /* Pods-trid-dev.release.xcconfig */;
+			baseConfigurationReference = D6636ED881CC772ED348942E /* Pods-trid-dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = trid/trid.entitlements;
@@ -2290,13 +2291,14 @@
 				DEVELOPMENT_TEAM = 22QYLALDQG;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "trid/trid-dev.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ruta cafetera";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rutavalluna.ios;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rutacafetera.ios;
 				PRODUCT_NAME = "Surf City";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

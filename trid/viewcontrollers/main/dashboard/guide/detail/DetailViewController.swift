@@ -156,18 +156,21 @@ class DetailViewController: DashboardBaseViewController {
     @IBOutlet weak var labelContactWebTitle: UILabel!
     @IBOutlet weak var labelContactFacebookTitle: UILabel!
     
+    @IBOutlet weak var labelContactYoutube: UILabel!
     @IBOutlet weak var labelContactAddress: UILabel!
     @IBOutlet weak var labelContactPhone: UILabel!
     @IBOutlet weak var labelContactMail: UILabel!
     @IBOutlet weak var labelContactWeb: UILabel!
     @IBOutlet weak var labelContactFacebook: UILabel!
     
+    @IBOutlet weak var btnContactYoutube: UIButton!
     @IBOutlet weak var btnContactAddress: UIButton!
     @IBOutlet weak var btnContactPhone: UIButton!
     @IBOutlet weak var btnContactSendMail: UIButton!
     @IBOutlet weak var btnContactVisitWeb: UIButton!
     @IBOutlet weak var btnContactViewFacebook: UIButton!
     
+    @IBOutlet weak var constraintContactYoutubeHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintContactHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintContactAddressHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintContactPhoneHeight: NSLayoutConstraint!
@@ -517,6 +520,15 @@ class DetailViewController: DashboardBaseViewController {
         let thingsToNote = place?.getThingsToNoteNew(full: true)
         readmore.setup(title: name, description: pdescription, facility: arrayPaids, note: thingsToNote, index: index)
         self.navigationController?.pushViewController(readmore, animated: true)
+    }
+    @IBAction func openYoutube(_ sender: Any) {
+        guard let urlYoutube = place?[FPlace.youtube] as? String else { return }
+        
+        if let url = URL(string: urlYoutube) {
+            UIApplication.shared.open(url)
+        } else {
+            print("Error al crear la URL")
+        }
     }
     
     @IBAction func actionReadmoreDescriptionOver(_ sender: Any) {
@@ -1000,6 +1012,15 @@ extension DetailViewController {
     
     // Contact
     func fillDataContact() {
+        let youtube = place?[FPlace.youtube] as? String
+        if (youtube ?? "") != "" {
+            labelContactAddress.text = youtube
+            constraintContactYoutubeHeight.constant = DetailValue.contactItemHeight
+        }
+        else {
+            constraintContactYoutubeHeight.constant = 0
+        }
+        
         let address = place?[FPlace.address] as? String
         if (address ?? "") != "" {
             labelContactAddress.text = address

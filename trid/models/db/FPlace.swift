@@ -13,6 +13,7 @@ class FPlace: FObject {
     // KEY -----------------------------------------------------
     // info
     static let name = "name"
+    static let youtube = "youtube"
     static let address = "address"
     static let description_ = "description"
     static let photos = "photos"
@@ -137,6 +138,10 @@ class FPlace: FObject {
     
     func getAddress() -> String {
         return self[FPlace.address] as? String ?? ""
+    }
+    
+    func getYoutube() -> String {
+        return self[FPlace.youtube] as? String ?? ""
     }
     
     func getLatitude() -> Double {

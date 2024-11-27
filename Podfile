@@ -13,10 +13,6 @@ def shared_pods
     pod 'TTRangeSlider'
     #AutoLayout
     pod 'PureLayout'
-    #Facebook
-    pod 'FBSDKCoreKit'
-    pod 'FBSDKLoginKit'
-    pod 'FBSDKShareKit'
     #Google
     #pod 'GoogleSignIn'
     pod 'GoogleMaps'
@@ -48,4 +44,6 @@ post_install do |installer|
       config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = "14.0"
     end
   end
+  
+  
 end

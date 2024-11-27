@@ -1,15 +1,5 @@
 PODS:
   - Alamofire (5.9.1)
-  - FBAEMKit (12.3.2):
-    - FBSDKCoreKit_Basics (= 12.3.2)
-  - FBSDKCoreKit (12.3.2):
-    - FBAEMKit (= 12.3.2)
-    - FBSDKCoreKit_Basics (= 12.3.2)
-  - FBSDKCoreKit_Basics (12.3.2)
-  - FBSDKLoginKit (12.3.2):
-    - FBSDKCoreKit (= 12.3.2)
-  - FBSDKShareKit (12.3.2):
-    - FBSDKCoreKit (= 12.3.2)
   - FontAwesomeKit (2.2.1):
     - FontAwesomeKit/Core (= 2.2.1)
     - FontAwesomeKit/FontAwesome (= 2.2.1)
@@ -112,9 +102,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - FBSDKCoreKit
-  - FBSDKLoginKit
-  - FBSDKShareKit
   - FontAwesomeKit
   - Google-Mobile-Ads-SDK
   - GoogleAPIClientForREST/Gmail
@@ -131,11 +118,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - FBAEMKit
-    - FBSDKCoreKit
-    - FBSDKCoreKit_Basics
-    - FBSDKLoginKit
-    - FBSDKShareKit
     - FontAwesomeKit
     - Google-Mobile-Ads-SDK
     - GoogleAPIClientForREST
@@ -157,11 +139,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
-  FBAEMKit: 955ca52eba8219c20f90774e8c6ff8bc7b3192a3
-  FBSDKCoreKit: 678f64eda3f0ff25c189c2ebbfe87b1d96a85a6d
-  FBSDKCoreKit_Basics: 6bee7c1f0932432901781203fa5e587ec5099148
-  FBSDKLoginKit: 56d55e23fe66a6db045826190b0b4dbc0e1ca0a0
-  FBSDKShareKit: 4ef957addab76816116ea92bd872e792f7137669
   FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   Google-Mobile-Ads-SDK: 69daa7fb42061b425340706e382e87fab3e666a3
   GoogleAPIClientForREST: 82fc3df6bbb59b226ac0bf6b638d38b31004f07e
@@ -181,6 +158,6 @@ SPEC CHECKSUMS:
   TTRangeSlider: 8cf72eca457c3b700c92eb0074be908c986e25ec
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 4774043ff0d9b58e87dddbaa1563acfc68514f18
+PODFILE CHECKSUM: cfde758e483f75da9403168716460d2eb8a18dec
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

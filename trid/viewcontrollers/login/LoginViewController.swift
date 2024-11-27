@@ -10,9 +10,6 @@ import UIKit
 import Foundation
 import FirebaseAuth
 import TTTAttributedLabel
-import FBSDKCoreKit
-import FBSDKLoginKit
-import FBSDKShareKit
 
 class LoginViewController: UIViewController {
     
@@ -338,7 +335,7 @@ class LoginViewController: UIViewController {
     //    }
     
     @IBAction func actionSignInWithFacebook(_ sender: Any) {
-        makeAllButtonEnabled(false)
+        /*makeAllButtonEnabled(false)
         let manager = LoginManager()
         manager.logOut()
         manager.logIn(permissions: ["email"], from: self, handler: {(result: LoginManagerLoginResult?, error: Error?) in
@@ -359,7 +356,7 @@ class LoginViewController: UIViewController {
             else {
                 self.view.makeToast(Localized.SomethingWrong)
             }
-        })
+        })*/
     }
     
     @IBAction func actionEmailSignUp(_ sender: Any) {

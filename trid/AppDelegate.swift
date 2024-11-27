@@ -14,13 +14,9 @@ import FirebaseAnalytics
 import FirebaseMessaging
 import PureLayout
 import GoogleMaps
-import FBSDKCoreKit
 import IQKeyboardManagerSwift
 import UserNotifications
 import FirebaseAuth
-import FBSDKCoreKit
-import FBSDKLoginKit
-import FBSDKShareKit
 import FirebaseStorage
 import GoogleMobileAds
 import FirebaseRemoteConfigInternal
@@ -77,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //GIDSignIn.sharedInstance().delegate = self
         
         // Facebook config
-        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        //ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         // window
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -199,9 +195,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                return true
 //            }
         }
-        if ApplicationDelegate.shared.application(app, open: url, options: options) {
-            return true
-        }
+        //if ApplicationDelegate.shared.application(app, open: url, options: options) {
+          //  return true
+        //}
         // handle to comeback app when authorization finish
 //        if currentAuthorizationFlow != nil && (currentAuthorizationFlow?.resumeExternalUserAgentFlow(with: url))! {
 //            currentAuthorizationFlow = nil
@@ -216,9 +212,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        if GIDSignIn.sharedInstance().handle(url) {
 //            return true
 //        }
-         if ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation) {
+         /*if ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation) {
             return true
-        }
+        }*/
         return false
     }
     

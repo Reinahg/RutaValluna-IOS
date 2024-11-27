@@ -843,12 +843,19 @@ extension DiscoverViewController : GMSMapViewDelegate {
                 continue
             }
             let coor = p.getCoordinate()
-            let art = GooglePlace.fromPlace(p, categoryType: categoryType)
-            if art != nil && categoryType != nil && (dict[coor] == nil){
-                // googlePlaces.append(art!)
-//                let marker = PlaceMarker(googlePlace: art!, index: i+1, categoryType: categoryType!)
-//                marker.map = self.gmap
-                let item = PlaceItem(position: art!.coordinate, place: art!)
+             
+            guard let art = GooglePlace.fromPlace(p, categoryType: categoryType) else {continue}
+            if categoryType != nil && (dict[coor] == nil){
+                
+                let item = PlaceItem(position: art.coordinate, place: art)
+                
+                if art.coordinate.latitude < -85 ||
+                    art.coordinate.latitude > 85 ||
+                    art.coordinate.longitude < -180 ||
+                    art.coordinate.longitude > 180 {
+                    continue // Saltar si las coordenadas están fuera de rango
+                }
+                
                 clusterManager.add(item)
                 dict[coor] = true
             }
