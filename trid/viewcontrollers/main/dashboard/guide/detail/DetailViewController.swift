@@ -162,6 +162,8 @@ class DetailViewController: DashboardBaseViewController {
     @IBOutlet weak var labelContactMail: UILabel!
     @IBOutlet weak var labelContactWeb: UILabel!
     @IBOutlet weak var labelContactFacebook: UILabel!
+    @IBOutlet weak var labelContactInstagram: UILabel!
+    @IBOutlet weak var labelContactTiktok: UILabel!
     
     @IBOutlet weak var btnContactYoutube: UIButton!
     @IBOutlet weak var btnContactAddress: UIButton!
@@ -169,7 +171,11 @@ class DetailViewController: DashboardBaseViewController {
     @IBOutlet weak var btnContactSendMail: UIButton!
     @IBOutlet weak var btnContactVisitWeb: UIButton!
     @IBOutlet weak var btnContactViewFacebook: UIButton!
+    @IBOutlet weak var btnContactViewInstagram: UIButton!
+    @IBOutlet weak var btnContactViewTiktok: UIButton!
     
+    @IBOutlet weak var constraintContactTiktokHeight: NSLayoutConstraint!
+    @IBOutlet weak var constraintContactInstagramHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintContactYoutubeHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintContactHeight: NSLayoutConstraint!
     @IBOutlet weak var constraintContactAddressHeight: NSLayoutConstraint!
@@ -336,7 +342,9 @@ class DetailViewController: DashboardBaseViewController {
         labelContactWebTitle.text = Localized.WhatsApp
         btnContactVisitWeb.setTitle(Localized.Visit, for: .normal)
         labelContactFacebookTitle.text = Localized.Facebook
-        btnContactViewFacebook.setTitle(Localized.View, for: .normal)
+        btnContactViewFacebook.setTitle(Localized.Visit, for: .normal)
+        btnContactViewInstagram.setTitle(Localized.Visit, for: .normal)
+        btnContactViewTiktok.setTitle(Localized.Visit, for: .normal)
         
         // Tour
         labelTourLocationTitle.text = Localized.Location
@@ -521,10 +529,25 @@ class DetailViewController: DashboardBaseViewController {
         readmore.setup(title: name, description: pdescription, facility: arrayPaids, note: thingsToNote, index: index)
         self.navigationController?.pushViewController(readmore, animated: true)
     }
+    @IBAction func openTiktok(_ sender: Any) {
+        guard let urlTiktok = place?[FPlace.tiktok] as? String else { return }
+        openURL(urlString: urlTiktok)
+    }
+    @IBAction func openInstagram(_ sender: Any) {
+        guard let urlInstagram = place?[FPlace.instagram] as? String else { return }
+        openURL(urlString: urlInstagram)
+    }
+    @IBAction func openFacebook(_ sender: Any) {
+        guard let urlFacebook = place?[FPlace.facebook] as? String else { return }
+        openURL(urlString: urlFacebook)
+    }
     @IBAction func openYoutube(_ sender: Any) {
         guard let urlYoutube = place?[FPlace.youtube] as? String else { return }
-        
-        if let url = URL(string: urlYoutube) {
+        openURL(urlString: urlYoutube)
+    }
+    
+    private func openURL(urlString: String) {
+        if let url = URL(string: urlString) {
             UIApplication.shared.open(url)
         } else {
             print("Error al crear la URL")
@@ -578,51 +601,36 @@ class DetailViewController: DashboardBaseViewController {
         _ = self.navigationController?.pushViewController(controller, animated: true)
     }
     
-//    @IBAction func actionShare(_ sender: Any) {
-//        let textToShare = place?[FPlace.name] as? String ?? ""
-//        let des = place?.getDescription_(full: false).string ?? ""
-//        var objectsToShare = [textToShare, des] as [Any]
-//        
-//        let bounds = UIScreen.main.bounds
-//        UIGraphicsBeginImageContextWithOptions(bounds.size, true, 0.0)
-//        self.view.drawHierarchy(in: bounds, afterScreenUpdates: false)
-//        let img = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//        if img != nil {
-//            objectsToShare.append(img!)
-//        }
-//        
-//        if let myWebsite = NSURL(string: AppSetting.App.website) {
-//            objectsToShare.append(myWebsite)
-//            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-//            activityVC.popoverPresentationController?.sourceView = self.view
-//            self.present(activityVC, animated: true, completion: nil)
-//        }
-//    }
-    
     // contact
     @IBAction func actionDirection(_ sender: Any) {
-        Utils.openMapDirection(place: place!)
+        let phone = place?[FPlace.address] as? String ?? ""
+        let urlString = "comgooglemaps://?q=\(phone)"
+            
+            if let url = URL(string: urlString) {
+                if UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                } else {
+                    // El usuario no tiene Google Maps instalado
+                    // Puedes redirigir al usuario a la App Store o mostrar un mensaje
+                    print("Google Maps no está instalado.")
+                    // Ejemplo para abrir la página web de Google Maps:
+                    let webUrl = URL(string: "https://www.google.com/maps/search/\(phone)")!
+                    UIApplication.shared.open(webUrl, options: [:], completionHandler: nil)
+                }
+            }
     }
     
     @IBAction func actionCall(_ sender: Any) {
         let phone = place?[FPlace.phonenumber] as? String ?? ""
-        if phone == "" {
+        guard let phoneURL = URL(string: "tel://\(phone)") else {
             return
         }
-        if phone.contains("/") {
-            let phones = phone.components(separatedBy: CharacterSet(charactersIn: "/"))
-            if phones.count > 0 {
-                let actionSheet = UIActionSheet(title: Localized.Call, delegate: self, cancelButtonTitle: Localized.Cancel, destructiveButtonTitle: nil)
-                actionSheet.tag = 1
-                for p in phones {
-                    actionSheet.addButton(withTitle: p)
-                }
-                actionSheet.show(in: self.view)
-            }
-        }
-        else{
-            Utils.call(phoneNumber: phone)
+        
+        if UIApplication.shared.canOpenURL(phoneURL) {
+            UIApplication.shared.open(phoneURL, options: [:], completionHandler: nil)
+        } else {
+            // Manejar el caso en el que la aplicación no puede abrir la URL
+            print("No se puede abrir la aplicación del teléfono.")
         }
     }
     
@@ -1014,7 +1022,7 @@ extension DetailViewController {
     func fillDataContact() {
         let youtube = place?[FPlace.youtube] as? String
         if (youtube ?? "") != "" {
-            labelContactAddress.text = youtube
+            labelContactYoutube.text = "Video promocional ------->"
             constraintContactYoutubeHeight.constant = DetailValue.contactItemHeight
         }
         else {
@@ -1039,16 +1047,6 @@ extension DetailViewController {
             constraintContactPhoneHeight.constant = 0
         }
         
-        /*
-        let mail = place?[FPlace.email] as? String
-        if (mail ?? "") != "" {
-            labelContactMail.text = mail
-            constraintContactMailHeight.constant = DetailValue.contactItemHeight
-        }
-        else{
-            constraintContactMailHeight.constant = 0
-        }
-        */
         labelContactMail.text = ""
         constraintContactMailHeight.constant = 0
 
@@ -1070,7 +1068,34 @@ extension DetailViewController {
         else{
             constraintContactFacebookHeight.constant = 0
         }
-        constraintContactHeight.constant = constraintContactAddressHeight.constant + constraintContactPhoneHeight.constant + constraintContactMailHeight.constant + constraintContactWebHeight.constant + constraintContactFacebookHeight.constant
+        
+        let instagram = place?[FPlace.instagram] as? String
+        if (instagram ?? "") != "" {
+            labelContactInstagram.text = instagram
+            constraintContactInstagramHeight.constant = DetailValue.contactItemHeight
+        }
+        else{
+            constraintContactInstagramHeight.constant = 0
+        }
+        
+        let tiktok = place?[FPlace.tiktok] as? String
+        if (tiktok ?? "") != "" {
+            labelContactTiktok.text = tiktok
+            constraintContactTiktokHeight.constant = DetailValue.contactItemHeight
+        }
+        else{
+            constraintContactTiktokHeight.constant = 0
+        }
+        
+        constraintContactHeight.constant =
+            constraintContactAddressHeight.constant +
+            constraintContactPhoneHeight.constant +
+            constraintContactMailHeight.constant +
+            constraintContactWebHeight.constant +
+            constraintContactFacebookHeight.constant +
+            constraintContactYoutubeHeight.constant +
+            constraintContactInstagramHeight.constant +
+            constraintContactTiktokHeight.constant
     }
     
     // Loved

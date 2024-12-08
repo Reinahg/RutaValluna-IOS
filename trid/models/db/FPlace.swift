@@ -30,6 +30,8 @@ class FPlace: FObject {
     static let subcategories = "subcategories"
     static let thingstonote = "thingstonote"
     static let website = "website"
+    static let tiktok = "tiktok"
+    static let instagram = "instagram"
     // location
     static let longitude = "longitude"
     static let latitude = "latitude"

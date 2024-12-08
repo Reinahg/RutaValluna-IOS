@@ -23,7 +23,7 @@ class MainBaseViewController: UIViewController {
         if let header2 = Bundle.main.loadNibNamed("TridHeaderBar", owner: self, options: nil)?[0] as? TridHeaderBar {
             header = header2
             self.view.addSubview(header)
-            header.autoPinEdge(toSuperviewEdge: ALEdge.top)
+            header.autoPinEdge(toSuperviewEdge: ALEdge.top, withInset: 15)
             header.autoPinEdge(toSuperviewEdge: ALEdge.leading)
             header.autoPinEdge(toSuperviewEdge: ALEdge.trailing)
             header.autoSetDimension(ALDimension.height, toSize: AppSetting.App.headerHeight)
