@@ -9,6 +9,7 @@
 struct Localized {
     // ----------------------- APP --------------------------
     static let AppName = "App Name".localized
+    static let AppName2 = "App Name 2".localized
     static let AppFullName = "App Full Name".localized
     static let AppSlogan1 = "App Slogan 1".localized
     static let AppSlogan2 = "App Slogan 2".localized

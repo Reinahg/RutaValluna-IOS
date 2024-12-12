@@ -11,7 +11,6 @@ import FirebaseAuth
 
 class SplashViewController: UIViewController {
     
-    @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     // variables
     var listenerHandle: AuthStateDidChangeListenerHandle?
@@ -21,8 +20,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // create animation "trid"
-        labelName.text = Localized.AppFullName
-        labelDescription.text = Localized.AppSlogan1
+        labelDescription.text = Localized.AppFullName
         
         // Check service
         self.autologin()

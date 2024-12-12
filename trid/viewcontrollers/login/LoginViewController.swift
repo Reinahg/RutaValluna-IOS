@@ -70,8 +70,9 @@ class LoginViewController: UIViewController {
         makeBackgroundSlideshow()
         
         // Info
-        labelName.text = Localized.AppFullName
-        makeSlogan(index: 0)
+        labelName.text = Localized.AppName
+        labelDescription.text = Localized.AppFullName
+        //makeSlogan(index: 0)
         
         // Slideshow lock direction
         slideshow.scrollView.isDirectionalLockEnabled = true
@@ -241,7 +242,7 @@ class LoginViewController: UIViewController {
                                            ImageSource(image: UIImage(named: photos[2])!)]
         slideshow.setImageInputs(source)
         slideshow.currentPageChanged = {page in
-            self.makeSlogan(index: page)
+            //self.makeSlogan(index: page)
         }
     }
     
